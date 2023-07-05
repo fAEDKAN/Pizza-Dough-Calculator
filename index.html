@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="public/favicon-16x16.png" />
+    <title>LOREM IPSUM</title>
+  </head>
+  <body>
+    <h1>Pizza Calculator!</h1>
+    <h3>Calculadora de Hidratación:</h3>
+    <p>Introducí la cantidad de harina que vas a usar y el porcentaje de hidratación deseado para obtener la cantidad ideal de agua y sal!</p>
+    <form id="hydration-form">
+      <label for="flour-input">Cantidad de Harina:</label>
+      <input id="flour-input" type="number" /> gramos.
+      <br />
+      <label for="hydration-select">% de Hidratación:</label>
+      <select id="hydration-select"></select>
+      <br />
+      <button type="submit">Calcular!</button>
+    </form>
+
+    <div id="result-container">
+      <p id="water-amount"></p>
+    </div>
+
+    <div id="error-container">
+      <p id="error-message" class="error-message"></p>
+    </div>
+    <script src="/js/select-script.js"></script>
+    <script src="/js/result-script.js"></script>
+  </body>
+</html>
