@@ -25,9 +25,10 @@ form.addEventListener("submit", function (event) {
 
   // Calcular cantidad de agua
   let water = flourAmount * hydration;
+  let salt = (flourAmount * 10) / 1000;
 
   // Mostrar resultado en contenedor
-  waterAmount.textContent = `Cantidad de Agua Necesaria: ${water} ml.`;
+  waterAmount.textContent = `La cantidad de agua necesaria para esa hidratación son ${water}ml y la cantidad de sal recomendada son ${salt}g.`;
 
   // Limpiar campos del form
   flourInput.value = flourAmount;
