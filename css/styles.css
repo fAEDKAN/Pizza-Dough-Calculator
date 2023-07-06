@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Gloria Hallelujah", cursive;
+  width: 100%;
+  height: 100vh;
+  /*   background-image: url("/public/colored-pikachu-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+}
+
+header {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #ffeace;
+  font-size: 1.25rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #ffeace;
+  font-size: 1.5rem;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  & select {
+    width: 100%;
+    height: 2.5rem;
+    border: 2px solid black;
+  }
+
+  & label {
+    font-size: 1.5rem;
+  }
+
+  & button {
+    margin: 2rem;
+    height: 2.5rem;
+    border: 2px solid black;
+  }
+}

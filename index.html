@@ -4,44 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="public/favicon-16x16.png" />
-    <title>LOREM IPSUM</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b23760bec1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Your Best Dough!</title>
   </head>
   <body>
-    <h1>Pizza Calculator!</h1>
-    <form id="recipe-form">
-      <label for="pizzas-select">Cantidad de Pizzas:</label>
-      <select id="pizzas-select"></select>
+    <header>
+      <h1>¡Creá tu propia receta!</h1>
+    </header>
 
-      <br />
+    <main>
+      <div class="form-container">
+        <form id="recipe-form">
+          <div class="pizzas-container">
+            <label for="pizzas-select">Cantidad de Pizzas:</label>
+            <select id="pizzas-select"></select>
+          </div>
 
-      <label for="weight-select">Peso del Bollo:</label>
-      <select id="weight-select"></select>
+          <div class="weight-container">
+            <label for="weight-select">Peso del Bollo:</label>
+            <select id="weight-select"></select>
+          </div>
 
-      <br />
+          <div class="hydration-container">
+            <label for="hydration-select">Porcentaje de Hidratación:</label>
+            <select id="hydration-select"></select>
+          </div>
 
-      <label for="hydration-select">Porcentaje de Hidratación:</label>
-      <select id="hydration-select"></select>
+          <div class="yeast-container">
+            <label for="yeast-select">Tipo de Levadura:</label>
+            <select id="yeast-select"></select>
+          </div>
 
-      <br />
+          <button type="submit">CALCULAR</button>
+        </form>
+      </div>
 
-      <label for="yeast-select">Tipo de Levadura:</label>
-      <select id="yeast-select">
-        <option value="fresh-yeast">Levadura Fresca</option>
-        <option value="dry-yeast">Levadura Seca</option>
-      </select>
-      <button type="submit">CALCULAR</button>
-    </form>
+      <div id="result-container">
+        <p id="flour-amount"></p>
+        <p id="water-amount"></p>
+        <p id="salt-amount"></p>
+        <p id="yeast-amount"></p>
+      </div>
+    </main>
 
-    <div id="result-container">
-      <p id="flour-amount"></p>
-      <p id="water-amount"></p>
-      <p id="salt-amount"></p>
-      <p id="yeast-amount"></p>
-    </div>
+    <footer>
+      <h3>
+        ¡Hecha con <i class="fa-solid fa-heart"></i> y toneladas de
+        <i class="fa-solid fa-pizza-slice"></i>
+        !
+      </h3>
+    </footer>
 
-    <div id="error-container">
-      <p id="error-message" class="error-message"></p>
-    </div>
     <script src="/js/form-script.js"></script>
     <script src="/js/result-script.js"></script>
   </body>

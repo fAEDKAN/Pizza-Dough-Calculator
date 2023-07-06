@@ -11,7 +11,7 @@ for (let i = 1; i <= 20; i++) {
 // Select de peso del bollo
 const weight = document.getElementById("weight-select");
 
-for (let i = 230; i <= 450; i += 20) {
+for (let i = 230; i <= 450; i += 10) {
   let option = document.createElement("option");
   option.value = i;
   option.textContent = `${i}g`;
@@ -23,8 +23,21 @@ const hydration = document.getElementById("hydration-select");
 
 for (let i = 50; i <= 100; i += 5) {
   let option = document.createElement("option");
-  let percentage = i / 100;
+  let percentage = i / 100 + 1;
   option.value = percentage;
   option.textContent = `${i}%`;
   hydration.appendChild(option);
 }
+
+// Select de levadura
+const yeast = document.getElementById("yeast-select");
+
+let fresh = document.createElement("option");
+fresh.value = "fresh";
+fresh.textContent = "Levadura Fresca";
+yeast.appendChild(fresh);
+
+let dry = document.createElement("option");
+dry.value = "dry";
+dry.textContent = "Levadura Seca";
+yeast.appendChild(dry);
