@@ -8,26 +8,41 @@
   </head>
   <body>
     <h1>Pizza Calculator!</h1>
-    <h3>Calculadora de Hidratación:</h3>
-    <p>Introducí la cantidad de harina que vas a usar y el porcentaje de hidratación deseado para obtener la cantidad ideal de agua y sal!</p>
-    <form id="hydration-form">
-      <label for="flour-input">Cantidad de Harina:</label>
-      <input id="flour-input" type="number" /> gramos.
+    <form id="recipe-form">
+      <label for="pizzas-select">Cantidad de Pizzas:</label>
+      <select id="pizzas-select"></select>
+
       <br />
-      <label for="hydration-select">% de Hidratación:</label>
+
+      <label for="weight-select">Peso del Bollo:</label>
+      <select id="weight-select"></select>
+
+      <br />
+
+      <label for="hydration-select">Porcentaje de Hidratación:</label>
       <select id="hydration-select"></select>
+
       <br />
-      <button type="submit">Calcular!</button>
+
+      <label for="yeast-select">Tipo de Levadura:</label>
+      <select id="yeast-select">
+        <option value="fresh-yeast">Levadura Fresca</option>
+        <option value="dry-yeast">Levadura Seca</option>
+      </select>
+      <button type="submit">CALCULAR</button>
     </form>
 
     <div id="result-container">
+      <p id="flour-amount"></p>
       <p id="water-amount"></p>
+      <p id="salt-amount"></p>
+      <p id="yeast-amount"></p>
     </div>
 
     <div id="error-container">
       <p id="error-message" class="error-message"></p>
     </div>
-    <script src="/js/select-script.js"></script>
+    <script src="/js/form-script.js"></script>
     <script src="/js/result-script.js"></script>
   </body>
 </html>
