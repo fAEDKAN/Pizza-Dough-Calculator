@@ -9,10 +9,10 @@ body {
   font-family: "Gloria Hallelujah", cursive;
   width: 100%;
   height: 100vh;
-  /*   background-image: url("/public/colored-pikachu-background.jpg");
+  background-image: url("/public/pizza-time-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
 header {
@@ -25,6 +25,7 @@ header {
   height: 5rem;
   background-color: #ffeace;
   font-size: 1.25rem;
+  border-bottom: 4px solid #a36953;
 }
 
 main {
@@ -46,6 +47,7 @@ footer {
   height: 5rem;
   background-color: #ffeace;
   font-size: 1.5rem;
+  border-top: 4px solid #a36953;
 }
 
 .form-container form {
@@ -55,18 +57,82 @@ footer {
   text-align: center;
 
   & select {
-    width: 100%;
+    display: flex;
+    width: 75%;
     height: 2.5rem;
-    border: 2px solid black;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: bold;
+    font-size: 1.1rem;
+    outline: none;
+    color: white;
+    border: 4px solid white;
+    cursor: pointer;
+    background-color: #a36953;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: #ffeace;
+      color: black;
+    }
+
+    & option {
+      text-align: center;
+      border-bottom: 1px solid black;
+    }
   }
 
   & label {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    color: white;
   }
 
   & button {
-    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0rem;
     height: 2.5rem;
     border: 2px solid black;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    border: 4px solid white;
+    cursor: pointer;
+    background-color: #a36953;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: #ffeace;
+      color: black;
+    }
   }
+}
+
+.pizzas-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weight-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hydration-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.yeast-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
