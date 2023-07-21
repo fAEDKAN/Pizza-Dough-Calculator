@@ -14,7 +14,7 @@ const weight = document.getElementById("weight-select");
 for (let i = 230; i <= 450; i += 10) {
   let option = document.createElement("option");
   option.value = i;
-  option.textContent = `${i}g`;
+  option.textContent = `${i}`;
   weight.appendChild(option);
 }
 
@@ -25,7 +25,7 @@ for (let i = 50; i <= 100; i += 5) {
   let option = document.createElement("option");
   let percentage = i / 100 + 1;
   option.value = percentage;
-  option.textContent = `${i}%`;
+  option.textContent = `${i}`;
   hydration.appendChild(option);
 }
 
